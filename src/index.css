@@ -24,6 +24,6 @@ li:hover::before{
 }
 
 
-/* .card{
-    background: #000;
-} */
+.card{
+    background: url(/src/Assests/testimonial.jpg);
+}
