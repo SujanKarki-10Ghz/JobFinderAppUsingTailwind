@@ -1,6 +1,6 @@
-import React from "react";
+import { BsFillMoonFill } from "react-icons/bs";
 
-const NavBar = () => {
+const NavBar = ({ handleThemeSwitch }) => {
   return (
     <>
       <div className="navBar sm:flex justify-between items-center p-[3rem]">
@@ -31,6 +31,12 @@ const NavBar = () => {
           <li className="menuList text-[#6f6f6f] hover:text-blueColor list-none cursor-pointer relative">
             Register
           </li>
+          <button
+            className="bg-blueColor p-[5px] rounded text-white"
+            onClick={handleThemeSwitch}
+          >
+            <BsFillMoonFill />
+          </button>
         </div>
       </div>
     </>
